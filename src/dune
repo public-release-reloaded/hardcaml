@@ -7,6 +7,7 @@
  (libraries bignum.bigint bin_prot core core_kernel.flags
    hardcaml_interface_types base.md5 jane_rope sexplib splittable_random
    stdio)
+ (flags (:standard -w -67-69))
  (preprocess
   (pps ppx_jane ppx_hardcaml0 ppx_rope -require-template-extension))
  (ocamlopt_flags
